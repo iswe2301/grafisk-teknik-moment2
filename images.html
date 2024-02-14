@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- HTML dokument -->
+<html lang="sv">
+
+<!-- Sidans huvud med metainformation, CSS, JS, titel -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="javascript/main.js" defer></script>
+    <title>VANVENTURES</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<!-- Sidans kropp -->
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Picturetagg med olika storlekar på bilder som visas beroende på skärmstorlek -->
+        <picture>
+            <source type="image/jpg" media="(min-width: 1521px)" srcset="images/stor_bild.jpg">
+            <source type="image/jpg" media="(min-width: 801px) and (max-width: 1520px)" srcset="images/mellan_bild.jpg">
+            <source type="image/jpg" media="(max-width: 800px)" srcset="images/liten_bild.jpg">
+            <img id="headerimg" src="images/stor_bild.jpg" alt="Dolomiterna Italien" loading="lazy">
+        </picture>
+        <!-- Meny med navigeringslänkar för datorläge -->
+        <nav id="computernav">
+            <a href="index.html"><img id="logo" src="images/logo.svg" alt="Vanventures logotyp" loading="lazy"></a>
+            <div id="navlinks">
+                <a href="index.html">STARTSIDA</a>
+                <a href="about.html">OM MIG</a>
+                <a id="active" href="images.html">BILDBEHANDLING</a>
+            </div>
+        </nav>
+        <!-- Menyknapp med ikon för mobilmeny -->
+        <button class="menubtn">
+            <span class="menuicon">
+                <span id="line1"></span>
+                <span id="line2"></span>
+                <span id="line3"></span>
+            </span>
+            <span id="menutext">Meny</span>
+        </button>
+        <!-- Mobilmeny/nav -->
+        <nav id="mobilenav">
+            <ul>
+                <li><a href="index.html">STARTSIDA</a></li>
+                <li><a href="about.html">OM MIG</a></li>
+                <li><a id="mobileactive" href="images.html">BILDBEHANDLING</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Huvudinnehåll -->
+    <main>
+        <!-- Artikel uppdelad i sektioner med underrubriker och bilder -->
+        <article>
+            <!-- Huvudrubrik-->
+            <h1 id="heading1">Bildbehandling</h1>
+            <section>
+                <h2>Färgstick</h2>
+                <div class="images">
+                    <!-- Picturetagg för att visa antingen avif eller jpg-format beroende på stöd -->
+                    <picture>
+                        <source srcset="images/fargstick_fore.avif" type="image/avif">
+                        <img class="imgsizeleft" src="images/fargstick_fore.jpg"
+                            alt="Mittunviersitetet campus Sundsvall" loading="lazy">
+                    </picture>
+                    <picture>
+                        <source srcset="images/fargstick_efter.avif" type="image/avif">
+                        <img class="imgsizeright" src="images/fargstick_efter.jpg"
+                            alt="Mittunviersitetet campus Sundsvall" loading="lazy">
+                    </picture>
+                </div>
+            </section>
+            <section>
+                <h2>Handkolorering och retusch</h2>
+                <div class="images">
+                    <picture>
+                        <source srcset="images/handkolorering_fore.avif" type="image/avif">
+                        <img class="imgsizeleft" src="images/handkolorering_fore.jpg"
+                            alt="Mittunviersitetet campus Sundsvall" loading="lazy">
+                    </picture>
+                    <picture>
+                        <source srcset="images/handkolorering.avif" type="image/avif">
+                        <img class="imgsizeright" src="images/handkolorering.jpg"
+                            alt="Mittunviersitetet campus Sundsvall" loading="lazy">
+                    </picture>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Laborationsuppgift för kursen DT200G, Grafisk teknik för webb.</p>
+        <p>&copy; Copyright Isa Westling, 2023</p>
+    </footer>
+</body>
+
+</html>

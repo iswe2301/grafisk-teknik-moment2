@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- HTML dokument -->
+<html lang="sv">
+
+<!-- Sidans huvud med metainformation, CSS, JS, titel -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="javascript/main.js" defer></script>
+    <title>VANVENTURES</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<!-- Sidans kropp -->
+
+<body>
+    <div></div>
+    <!-- Header -->
+    <header>
+        <!-- Picturetagg med olika storlekar på bilder som visas beroende på skärmstorlek -->
+        <picture>
+            <source type="image/jpg" media="(min-width: 1521px)" srcset="images/stor_bild.jpg">
+            <source type="image/jpg" media="(min-width: 801px) and (max-width: 1520px)" srcset="images/mellan_bild.jpg">
+            <source type="image/jpg" media="(max-width: 800px)" srcset="images/liten_bild.jpg">
+            <img id="headerimg" src="images/stor_bild.jpg" alt="Dolomiterna Italien" loading="lazy">
+        </picture>
+        <!-- Meny med navigeringslänkar för datorläge -->
+        <nav id="computernav">
+            <a href="index.html"><img id="logo" src="images/logo.svg" alt="Vanventures logotyp" loading="lazy"></a>
+            <div id="navlinks">
+                <a id="active" href="index.html">STARTSIDA</a>
+                <a href="about.html">OM MIG</a>
+                <a href="images.html">BILDBEHANDLING</a>
+            </div>
+        </nav>
+        <!-- Menyknapp med ikon för mobilmeny -->
+        <button class="menubtn">
+            <span class="menuicon">
+                <span id="line1"></span>
+                <span id="line2"></span>
+                <span id="line3"></span>
+            </span>
+            <span id="menutext">Meny</span>
+        </button>
+        <!-- Mobilmeny/nav -->
+        <nav id="mobilenav">
+            <ul>
+                <li><a id="mobileactive" href="index.html">STARTSIDA</a></li>
+                <li><a href="about.html">OM MIG</a></li>
+                <li><a href="images.html">BILDBEHANDLING</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Huvudinnehåll -->
+    <main>
+        <div>
+            <!-- Huvudrubrik och bilder på produkter -->
+            <h1 id="heading1">Senaste produkterna</h1>
+            <div id="products">
+                <img src="images/frilaggning01.png" alt="Gul Wolkswagen T1 buss" loading="lazy">
+                <img src="images/frilaggning02.png" alt="Orange Wolkswagen T1 buss" loading="lazy">
+                <img src="images/frilaggning03.png" alt="Turkos Wolkswagen T1 buss" loading="lazy">
+            </div>
+        </div>
+        <!-- Underrubriker -->
+        <div id="background">
+            <h2 id="programheading">Webbutvecklings&shy;programmet<br>
+                Mittuniversitetet</h2>
+            <h2 id="button">Sök här</h2>
+        </div>
+        <!-- Gif-bild -->
+        <div id="animation">
+            <img src="images/reklam_banner.gif" alt="Wolkswagen T1 buss" loading="lazy">
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Laborationsuppgift för kursen DT200G, Grafisk teknik för webb.</p>
+        <p>&copy; Copyright Isa Westling, 2023</p>
+    </footer>
+</body>
+
+</html>

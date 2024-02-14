@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- HTML dokument -->
+<html lang="sv">
+
+<!-- Sidans huvud med metainformation, CSS, JS, titel -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="javascript/main.js" defer></script>
+    <title>VANVENTURES</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<!-- Sidans kropp -->
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Picturetagg med olika storlekar på bilder som visas beroende på skärmstorlek -->
+        <picture>
+            <source type="image/jpg" media="(min-width: 1521px)" srcset="images/stor_bild.jpg">
+            <source type="image/jpg" media="(min-width: 801px) and (max-width: 1520px)" srcset="images/mellan_bild.jpg">
+            <source type="image/jpg" media="(max-width: 800px)" srcset="images/liten_bild.jpg">
+            <img id="headerimg" src="images/stor_bild.jpg" alt="Dolomiterna Italien" loading="lazy">
+        </picture>
+        <!-- Meny med navigeringslänkar för datorläge -->
+        <nav id="computernav">
+            <a href="index.html"><img id="logo" src="images/logo.svg" alt="Vanventures logotyp" loading="lazy"></a>
+            <div id="navlinks">
+                <a href="index.html">STARTSIDA</a>
+                <a id="active" href="about.html">OM MIG</a>
+                <a href="images.html">BILDBEHANDLING</a>
+            </div>
+        </nav>
+        <!-- Menyknapp med ikon för mobilmeny -->
+        <button class="menubtn">
+            <span class="menuicon">
+                <span id="line1"></span>
+                <span id="line2"></span>
+                <span id="line3"></span>
+            </span>
+            <span id="menutext">Meny</span>
+        </button>
+        <!-- Mobilmeny/nav -->
+        <nav id="mobilenav">
+            <ul>
+                <li><a href="index.html">STARTSIDA</a></li>
+                <li><a id="mobileactive" href="about.html">OM MIG</a></li>
+                <li><a href="images.html">BILDBEHANDLING</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Huvudinnehåll -->
+    <main>
+        <!-- Grid container med artikel innehållande huvudrubrik, sektioner med underrubriker, text och bild -->
+        <article id="gridcontainer">
+            <h1 id="item1">Om mig</h1>
+            <section id="item3">
+                <h2>Isa Westling</h2>
+                <p>Hej! Mitt namn är Isa och jag är en nyfiken person som älskar ny kunskap. Jag har ett stort intresse
+                    för personlig utveckling och problemlösning.</p>
+                <p>Jag studerar just nu Webbutvecklingsprogrammet på Mittuniversitetet. I denna kurs arbetar vi med
+                    tekniker för grafiskt material på webben och hur det kan optimeras på bästa sätt. Jag har tidigare
+                    en viss erfarenhet av detta då jag
+                    arbetar mycket med bilder och Photoshop i mitt arbete som e-learningproducent.</p>
+                <p>På fritiden spenderar jag helst min lediga tid genom att resa och upptäcka nya ställen tillsammans
+                    med min sambo, hund och vår van.</p>
+            </section>
+            <img id="item2" src="images/portrait.png" alt="Porträtt Isa Westling" loading="lazy">
+            <section id="item4">
+                <h2>Om uppgiften</h2>
+                <p>Det här har varit en extremt rolig och lärorik uppgift. Det har varit roligt att både få skapa
+                    innehåll i form av bilder och även få koda själa webbplatsen utifrån en prototyp. Jag gillar
+                    "learning by doing" och att få testa sig fram till bästa möjliga sätt.</p>
+                <p>Jag känner att mina kunskaper i Photoshop har ökat trots att jag arbetat med det en del sedan innan.
+                    På mitt arbete har vi inte arbetat så mycket med att komprimera bilder så mycket, vilket är något
+                    som jag definitivt kommer att ta med mig för att förbättra.
+                </p>
+                <p>Det som jag tyckte var mest utmanande var att färglägga den svartvita bilden. Dels då denna hade
+                    mycket detaljer i sig vilket var tidskrävande, men även eftersom det var svårt att få till färgerna
+                    bra eftersom jag upplevde att bilden saknade en del svärta.
+                </p>
+                <p>Sammanfattningsvis har det varit en mycket rolig och lärorik uppgift!</p>
+            </section>
+        </article>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Laborationsuppgift för kursen DT200G, Grafisk teknik för webb.</p>
+        <p>&copy; Copyright Isa Westling, 2023</p>
+    </footer>
+</body>
+
+</html>
